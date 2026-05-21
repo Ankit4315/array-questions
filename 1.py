@@ -2,14 +2,17 @@
 
 arr = [12, 3, 4, 5, 5, 100]
 
-max = 0
-min = float('inf')
+def minmax(arr):
+    max = 0
+    min = float('inf')
 
-for i in arr:
-    if max < i:
-        max = i
-    if min > i:
-        min = i
+    for i in arr:
+        if max < i:
+            max = i
+        if min > i:
+            min = i
+    return min, max
 
-print(max)
-print(min)
+mimx = minmax(arr)
+
+print(mimx)
